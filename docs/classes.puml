@@ -1,0 +1,38 @@
+@startuml "Modelo conceitual"
+
+
+
+class Client {
+    id : Long
+    name: String
+    email: String
+    comments: String
+}
+
+
+class Professional {
+    id: Long
+    name : String
+    area : Area
+    appointmentDurationInMinutes: Integer
+    workSchedule : List<WorkSchedule>
+    
+}
+
+class WorkSchedule {
+    id: Long
+    dayWeek: DayOfWeek
+    startTime: Time
+    endTime: Time
+}
+
+class Area {
+    id: Integer
+    name: String
+}
+
+
+Professional o-- Area
+Professional *-- WorkSchedule
+
+@enduml
