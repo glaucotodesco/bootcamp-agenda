@@ -4,10 +4,11 @@ Uma clínica médica necessita controlar a agenda dos médicos, terapeutas, psic
 Todo o sistema de agendamento é feito por telefone somente pelos atendentes da clínica.
 
 
+
 # Requisitos:
-  - Cada profissinal indica em quais dias da semana e horários ele vai trabalhar, considerando intervalos e hora de almoço.
-  - Cada profissional deve indicar o tempo médio de cada uma das suas consultas e sessões (15, 30, 45 e 60).
-  - Cada consulta deve durar o tempo indicado por cada profissional, dessa forma, os horários de agendamento são intercalados a cada x minutos.
+  - Cada profissinal indica em quais dias da semana e horários ele vai trabalhar em intervalos de 30 minutos.
+  - Um profissional pode estar ativo ou desativo. 
+  - Cada consulta deve durar o tempo de 30 minutos e os horários de agendamento são intercalados a cada 30 minutos.
   - O sistema não deve permitir agendar fora do horário e dias da semana de cada profissional.
   - O sistema não deve permitir agendar duas ou mais pessoas no mesmo dia e horário de um profissional
   - O sistema não deve permitir agendar a mesma pessoa no mesmo dia e horário.
@@ -16,30 +17,44 @@ Todo o sistema de agendamento é feito por telefone somente pelos atendentes da 
   - O atendente pode cancelar ou reagendar uma consulta ou sessão.
   - O sistema deve controlar a frequência de paciente. Ao realizar uma consulta ou sessão, indicar indicar que o paciente veio, caso contrário ele ficará marcado como ausente
   - Ao agendar uma consulta ou sessão, mostrar o histório que ausencias (faltas) do paciente.
+  - Agendar somente com profissionais ativos.
+  - Não agendar no passado.
+  - Não remover clientes com consultas ou sessões.
+  - Não remover profissionais com consultas ou sessões.
+  - Não remover Area e Tipo de Consulta com relacionamentos.
+
   
 # Permitir:
-  - Cadastrar convênios atendidos pela clínica. 
-  - Cadastar pacientes: Nome, telefone, email e observações.
-  - Cadastar profissionais, com a sua disponibilidade de atendimento. Nome, especialidade, observações e disponibilidade.
+  - Cadastrar o tipo de atendimento: particular, convenio1, convênio 2
+  - Cadastar pacientes: Nome, telefone, email, data de nascimento, género e observações.
+  - Cadastar profissionais, com a sua disponibilidade de atendimento. Nome, especialidade, observações e disponibilidade. Ao cadastrar um profissional ele já fica ativado.
+  - No cadastro do profissional ter a opção de ativar e desativar
   - Agendar consultas mostrando disponibilidade e faltas do paciente. 
         Ao agendar consultar marcar como particular ou convênio.
-        Marcar prioridade: Baixa, Média e Alta
-        Enviar SMS e Email um dia antes? (SIM/NÃO)
-  - Cancelar consulta
+  - Cancelar consulta - Marcar o motivo nos comentários.
   - Reagendar consultas, mostrando disponibilidade e faltas do paciente.
+    Marcar o motivo nos comentários.
   - Bloquear datas e horários específicos de um prossifional
   - Listar as consultas do dia a clínica
-  - Ao agendar, cancelar ou reagendar uma consulta, guardar o dia, hora e qual atendente fez a operação.
   - Históricos de consultas de um cliente.
-  - Listar horários em abertos de um profissional para tentar antecipar consultas por ordem de prioridade.
-  - Enviar SMS e email um dia antes da consulta ou sessão.
   - Imprimir relatório das consultas do dia.
   
 
 # Dois perfis:
-  - Administrador: Permite criar atendentes
-  - Atendente: Permite agendar, cancelar e reagendar consultas.
+  
 
+  - Operador: 
+    * Permite criar Clientes
+    * Permite agendarm, cancelar e reagendar consultas.
+
+   - Administrador: 
+    * Faz tudo que o operador
+    * Permite criar operadores
+    * Permite criar Tipo de Agendamento
+    * Permite criar Areas
+    * Permite criar profissionais Profissionais
+    * Permite Ativar e Desativar Profissionais
+    
 
 
 

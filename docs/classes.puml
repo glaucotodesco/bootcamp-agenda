@@ -1,22 +1,26 @@
 @startuml "Modelo conceitual"
 
-
-
-class Client {
-    id : Long
-    name: String
-    email: String
+class People {
+    id: Long
+    name : String
+    phone: String
     comments: String
 }
 
-
 class Professional {
-    id: Long
-    name : String
-    area : Area
-    appointmentDurationInMinutes: Integer
-    workSchedule : List<WorkSchedule>
-    
+    active: boolean    
+}
+
+class Client {
+    gender: Enum
+    dayOfBirth: LocalDate
+}
+
+
+'private or health insurance
+class AppoitmentType {
+    id: Integer
+    type: String
 }
 
 class WorkSchedule {
@@ -31,8 +35,29 @@ class Area {
     name: String
 }
 
+class Appointment {
+    id: Long
+    date: LocalTime
+    startTime: Time
+    comments: String
+}
 
-Professional o-- Area
-Professional *-- WorkSchedule
+class BlockedDate {
+    id: Long
+    date: LocalDate
+    startTime: Time
+    endTime: Time
+}
+
+People              <|--            Client
+People              <|--            Professional
+Professional        o--     "0..*"  Area
+Professional        *--     "0..*"  WorkSchedule
+Professional        *--     "0..*"  BlockedDate
+Appointment         o--     "0..1"  AppoitmentType
+Appointment "0..*"  -l-     "0..1"  Client            : has ->
+Appointment "0..*"  -r-     "0..1"  Professional      : <- has  
+
+
 
 @enduml
