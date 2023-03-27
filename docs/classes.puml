@@ -1,9 +1,10 @@
 @startuml "Modelo conceitual"
 
-class People {
+abstract class People {
     id: Long
     name : String
     phone: String
+    email: String
     comments: String
 }
 
@@ -12,7 +13,7 @@ class Professional {
 }
 
 class Client {
-    gender: Enum
+    gender: M | F
     dayOfBirth: LocalDate
 }
 
@@ -24,7 +25,7 @@ class AppoitmentType {
 }
 
 class WorkSchedule {
-    id: Long
+    id: Integer
     dayWeek: DayOfWeek
     startTime: Time
     endTime: Time
@@ -43,25 +44,28 @@ class Appointment {
 }
 
 class BlockedDate {
-    id: Long
+    id: Integer
     date: LocalDate
     startTime: Time
     endTime: Time
 }
 
 class User {
-    id: Long
+    password: String
     type: ADMIN | OPERATOR
+
 }
 
 People              <|--            Client
 People              <|--            Professional
+People              <|--            User
 Professional        o--     "0..*"  Area
 Professional        *--     "0..*"  WorkSchedule
 Professional        *--     "0..*"  BlockedDate
 Appointment         o--     "0..1"  AppoitmentType
 Appointment "0..*"  -l-     "0..1"  Client            : has ->
 Appointment "0..*"  -r-     "0..1"  Professional      : <- has  
+
 
 
 
