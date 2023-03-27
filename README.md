@@ -41,9 +41,7 @@ Todo o sistema de agendamento é feito por telefone somente pelos atendentes da 
   
 
 # Dois perfis:
-  
-
-  - Operador: 
+   - Operador: 
     * Permite criar Clientes
     * Permite agendarm, cancelar e reagendar consultas.
 

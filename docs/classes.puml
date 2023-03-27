@@ -49,6 +49,11 @@ class BlockedDate {
     endTime: Time
 }
 
+class User {
+    id: Long
+    type: ADMIN | OPERATOR
+}
+
 People              <|--            Client
 People              <|--            Professional
 Professional        o--     "0..*"  Area
