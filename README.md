@@ -35,9 +35,9 @@ Todo o sistema de agendamento é feito por telefone somente pelos atendentes da 
   - Reagendar consultas, mostrando disponibilidade e faltas do paciente.
     Marcar o motivo nos comentários.
   - Bloquear datas e horários específicos de um prossifional
-  - Listar as consultas do dia a clínica
+  - Listar as consultas do dia a clínica com opção de imprimir
   - Históricos de consultas de um cliente.
-  - Imprimir relatório das consultas do dia.
+  
   
 
 # Dois perfis:

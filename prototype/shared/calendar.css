@@ -1,0 +1,44 @@
+
+.calendar {
+    padding: 30px;
+}
+.month-year {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.week-day {
+    padding: 20px;
+    margin: 1px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.day {
+    padding: 20px;
+    margin: 1px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.day-avaliable {
+    background-color: green;
+}   
+
+.day-off {
+    background-color:whitesmoke;
+    color: gray;
+}   
+
+.day-full {
+    background-color: red;
+}   
+
+.day-blocked {
+    background-color: gold;
+}  
+
+.day-other-month {
+    background-color: white
+}
