@@ -1,0 +1,90 @@
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Horário</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Telefone</th>
+        <th scope="col">Presença</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="align-middle">
+        <td  data-bs-toggle="modal" data-bs-target="#exampleModal2">   
+           10:00
+        </td>
+        <td  data-bs-toggle="modal" data-bs-target="#exampleModal2">Maria José da Silva</td>
+        <td  data-bs-toggle="modal" data-bs-target="#exampleModal2">(15) 99912-1213</td>
+        <th>
+            <span class="badge bg-success">
+                Presente
+            </span>
+        </th>
+       
+      </tr>
+      <tr class="align-middle">
+        <td data-bs-toggle="modal" data-bs-target="#exampleModal2">   
+           10:30
+        </td>
+        <td data-bs-toggle="modal" data-bs-target="#exampleModal2">Antônio Roberto de Morães</td>
+        <td data-bs-toggle="modal" data-bs-target="#exampleModal2">(15) 4432-5533</td>
+        <th>
+            <span class="badge bg-secondary">
+                Ausente
+            </span>
+        </th>
+      </tr>
+      <tr class="align-middle">
+        <td  data-bs-toggle="modal" data-bs-target="#exampleModal2">   
+           11:00
+        </td>
+        <td  data-bs-toggle="modal" data-bs-target="#exampleModal2">Tomas Cruz Moreira</td>
+        <td  data-bs-toggle="modal" data-bs-target="#exampleModal2">(11) 5423-2212</td>
+        <th>
+            <button class="btn btn-primary btn-sm">
+                Veio
+            </button>
+            <button class="btn btn-danger btn-sm ">
+                Faltou
+            </button>
+        </th>
+      </tr>
+      <tr class="align-middle" >
+        <td data-bs-toggle="modal" data-bs-target="#exampleModal2">   
+           11:30
+        </td>
+        <td data-bs-toggle="modal" data-bs-target="#exampleModal2">Mônica Ferraz Bueno</td>
+        <td data-bs-toggle="modal" data-bs-target="#exampleModal2">(11) 9854-4437</td>
+        <td>
+            <button class="btn btn-primary btn-sm">
+                Veio
+            </button>
+            <button class="btn btn-danger btn-sm">
+                Faltou
+            </button>
+        </td>
+      </tr>
+    </tbody>    
+  </table>
+  <small>
+    *Selecione uma linha para mais informações!
+  </small>
+  
+
+
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg text-start">
+        <div class="modal-content">
+            <div class="modal-header bg-light">
+                <h1 class="modal-title fs-5 " id="exampleModalLabel">Dados do Agendamento</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
