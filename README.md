@@ -13,10 +13,11 @@ Todo o sistema de agendamento é feito por telefone somente pelos atendentes da 
   - O sistema não deve permitir agendar duas ou mais pessoas no mesmo dia e horário de um profissional
   - O sistema não deve permitir agendar a mesma pessoa no mesmo dia e horário.
   - O sistema não deve permitir agendar em feriados.
-  - O profissinal pode ainda bloquear dias e horários específicos, conforme a sua necessidade e demanada. Por exemplo, bloquear uma data para fazer um treinamento.
-  - O atendente pode cancelar ou reagendar uma consulta ou sessão.
+  - O profissinal pode ainda bloquear dias e horários específicos, conforme a sua necessidade e demanada. Por exemplo, bloquear uma data para fazer um treinamento ou bloquear um horário (manhã ou tarde por exemplo)
+  - O atendente pode cancelar uma consulta ou sessão.
   - O sistema deve controlar a frequência de paciente. Ao realizar uma consulta ou sessão, indicar indicar que o paciente veio, caso contrário ele ficará marcado como ausente
-  - Ao agendar uma consulta ou sessão, mostrar o histório que ausencias (faltas) do paciente.
+  - Ao agendar uma consulta, selecionar primeiro a área e depois o profissional
+  - Ao agendar uma consulta, apresentar o primeiro dia e horário disponível do profissional selecionado.
   - Agendar somente com profissionais ativos.
   - Não agendar no passado.
   - Não remover clientes com consultas ou sessões.
@@ -32,8 +33,6 @@ Todo o sistema de agendamento é feito por telefone somente pelos atendentes da 
   - Agendar consultas mostrando disponibilidade e faltas do paciente. 
         Ao agendar consultar marcar como particular ou convênio.
   - Cancelar consulta - Marcar o motivo nos comentários.
-  - Reagendar consultas, mostrando disponibilidade e faltas do paciente.
-    Marcar o motivo nos comentários.
   - Bloquear datas e horários específicos de um prossifional
   - Listar as consultas do dia a clínica com opção de imprimir
   - Históricos de consultas de um cliente.
@@ -53,6 +52,8 @@ Todo o sistema de agendamento é feito por telefone somente pelos atendentes da 
     * Permite criar profissionais Profissionais
     * Permite Ativar e Desativar Profissionais
     
-
+# Responsividade
+  - Ter o layout correto para larguras de tela com 350px ou mais.
+  - Não considerar largunras menores que 350px
 
 

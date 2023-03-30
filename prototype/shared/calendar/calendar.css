@@ -1,0 +1,63 @@
+
+.calendar {
+    margin: auto;
+}
+
+.month-year {
+    font-weight: 500;
+}
+
+.week-day {
+    padding: 6px;
+    margin: 1px;
+    font-weight: 500;
+}
+
+.day {
+    padding: 6px;
+    margin: 1px;
+    font-weight: 500;
+    color: white;
+}
+
+.day-avaliable {
+    background-color: #039103;
+}   
+
+.day-avaliable:hover {
+    background-color: #08591e;
+    cursor: pointer;
+}   
+
+
+.day-off {
+    background-color:whitesmoke;
+    color: gray;
+}   
+
+.day-off:hover {
+    background-color:whitesmoke;
+    color: gray;
+}  
+.day-full {
+    background-color: #ce2525ff;
+    color: black;
+}   
+
+.day-blocked {
+    background-color: gold;
+    color: black;
+}  
+
+.day-other-month {
+    background-color: white
+}
+
+.previous-month:hover {
+    cursor: pointer;
+}
+
+.next-month:hover {
+    cursor: pointer;
+}
+
