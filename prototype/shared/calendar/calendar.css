@@ -61,3 +61,10 @@
     cursor: pointer;
 }
 
+.day-selected {
+  border-radius: 50%;
+  border: 3px solid #000;
+  color: #000;
+  text-align: center; 
+}
+
