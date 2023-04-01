@@ -24,6 +24,10 @@ class AppoitmentType {
     type: String
 }
 
+class Comment {
+    id: Long
+    comment: String
+}
 class WorkSchedule {
     id: Integer
     dayWeek: DayOfWeek
@@ -40,16 +44,9 @@ class Appointment {
     id: Long
     date: LocalTime
     startTime: Time
-    comments: String
     status: PRESENT | ABSENT | OPEN
 }
 
-class BlockedDate {
-    id: Integer
-    date: LocalDate
-    startTime: Time
-    endTime: Time
-}
 
 class User {
     password: String
@@ -62,10 +59,10 @@ People              <|--            Professional
 People              <|--            User
 Professional        o--     "0..*"  Area
 Professional        *--     "0..*"  WorkSchedule
-Professional        *--     "0..*"  BlockedDate
 Appointment         o--     "0..1"  AppoitmentType
 Appointment "0..*"  -l-     "0..1"  Client            : has ->
 Appointment "0..*"  -r-     "0..1"  Professional      : <- has  
+Appointment         *--     "0..*"  Comment           
 
 
 
