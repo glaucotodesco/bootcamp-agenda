@@ -13,7 +13,7 @@ class Professional {
 }
 
 class Client {
-    gender: M | F
+    gender: MALE | FEMALE
     dayOfBirth: LocalDate
 }
 
@@ -41,6 +41,7 @@ class Appointment {
     date: LocalTime
     startTime: Time
     comments: String
+    status: PRESENT | ABSENT | OPEN
 }
 
 class BlockedDate {

@@ -54,6 +54,6 @@ Todo o sistema de agendamento é feito por telefone somente pelos atendentes da 
     
 # Responsividade
   - Ter o layout correto para larguras de tela com 350px ou mais.
-  - Não considerar largunras menores que 350px
+  - Não considerar larguras menores que 350px
 
 
