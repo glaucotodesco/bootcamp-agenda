@@ -28,22 +28,15 @@
     color: gray;
 }   
 
-.day-off:hover {
-    background-color:whitesmoke;
-    color: gray;
-}  
-.day-full {
-    background-color: #ce2525ff;
-    color: black;
-}   
+.day-selected {
+    background-color: #198754
+}
+.day-available {
+    background-color: #6C757D
+}
 
-.day-blocked {
-    background-color: gold;
-    color: black;
-}  
-
-.day-other-month {
-    background-color: white
+.day-available:hover {
+    background-color:  #198754
 }
 
 .previous-month:hover {
@@ -54,11 +47,5 @@
     cursor: pointer;
 }
 
-.day-selected {
-  border: 3px solid #000;
-  color: white;
-  background-color: #1abc45;
-  font-size: 1.25rem;
-  padding: 0;
-}
+
 

@@ -7,7 +7,8 @@ Existem diversas outras funcionalidades que serão implementadas em versões fut
 
 
 # Requisitos da primeira versão (MVP):
-  - Cada profissinal indica em quais dias da semana e horários ele vai trabalhar em intervalos de 30 minutos das 08:00 às 12:00 e das 13:00 às 18:00 horas de segunda à sexta). 
+  - O horário de funcionamento da clinica é das 8:00 às 12:00 e das 14:00 às 18:00.
+  - Cada profissinal indica em quais dias da semana e horários ele vai trabalhar em intervalos de 30 minutos das 08:00 às 11:30 e das 14:00 às 17:30 horas de segunda à sexta). 
   - Um profissional pode estar ativo ou desativo. 
   - Cada consulta deve durar o tempo de 30 minutos e os horários de agendamento são intercalados a cada 30 minutos (das 08:00 às 12:00 e das 13:00 às 18:00 horas de segunda à sexta)
   - O sistema não deve permitir agendar fora do horário e dias da semana de cada profissional.

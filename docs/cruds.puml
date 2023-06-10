@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+
+rectangle "Usuário" as usuario {
+  rectangle "Operador" as operador {
+    (*) "Realizar Ação 1"
+    "Realizar Ação 2"
+  }
+
+  rectangle "Administrador" as administrador {
+    rectangle "Operador" as operador_admin
+    "Realizar Ação 3"
+    "Realizar Ação 4"
+  }
+
+  administrador -- operador_admin
+  usuario -- operador
+  usuario -- administrador
+}
+
+@enduml

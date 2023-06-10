@@ -9,8 +9,8 @@
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css"
         href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/prototype/shared/calendar/calendar.css">
-    <link rel="stylesheet" type="text/css" href="/prototype/shared/schedule/schedule.css">
+    <link rel="stylesheet" type="text/css" href="/prototype/components/calendar/calendar.css">
+    <link rel="stylesheet" type="text/css" href="/prototype/components/schedule/schedule.css">
 
 
 </head>
@@ -30,7 +30,17 @@
                 </div>
                 <div id="schedule" class="mt-3">
                 </div>
+                <div class="row mt-3 fs-5">
+                    <div class="col-12">
+                        Agendamento para o dia: <span class="fw-bold">02/01/25</span>
+                    </div>
+                    <div class="col-12">
+                        Horário Escolhido: <span class="fw-bold">18:00</span>
+                    </div>
+                </div>
             </div>
+
+         
         </div>
         <div class="mt-2 px-5">
             <div class="d-grid">
@@ -109,10 +119,10 @@
 
         <script>
             $(function () {
-                $("#navbar").load("shared/navbar/navbar.html");
-                $("#calendar").load("shared/calendar/calendar.html");
-                $("#schedule").load("shared/schedule/schedule.html");
-                $("#formAppoitment").load("shared/formAppoitment/formAppoitment.html");
+                $("#navbar").load("../components/navbar/navbar.html");
+                $("#calendar").load("../components/calendar/calendar.html");
+                $("#schedule").load("../components/schedule/schedule.html");
+                $("#formAppoitment").load("../components/formAppoitment/formAppoitment.html");
 
 
             });

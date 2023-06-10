@@ -1,0 +1,75 @@
+@startuml "Modelo conceitual"
+
+abstract class Person {
+    id: Long
+    name : String
+    phone: String
+}   
+
+class Professional {
+    active: boolean    
+}
+
+class Client {
+     dateOfBirth: LocalDate
+}
+
+
+'private or health insurance
+class AppoitmentType {
+    id: Integer
+    type: String
+}
+
+
+class WorkScheduleItem {
+    id: Long
+    dayWeek: DayOfWeek
+    startTime: LocalTime
+    endTime: LocalTime
+    slots: Integer;
+    slotSize: Integer;
+}
+
+class Area {
+    id: Integer
+    name: String
+}
+
+class Appointment {
+    id: Long
+    date: LocalDate
+    startTime: LocalTime
+    endTime: LocalTime
+    status: PRESENT | ABSENT | OPEN | CANCEL
+    comments: String
+
+}
+
+
+class User {
+    password: String
+    email: String
+}
+
+class Role {
+    id: Integer
+    role: ADMIN | OPERATOR
+}
+
+Person              <|--             Client
+Person              <|--             Professional
+Person              <|--             User
+Professional "0..*"  -d-     "0..*"  Area
+Professional         *--     "0..*"  WorkScheduleItem
+Appointment          o--     "0..1"  AppoitmentType
+Appointment "0..*"   -l-     "0..1"  Client            : has ->
+Appointment "0..*"   -r-     "0..1"  Professional      : <- has  
+Appointment "0..*"   -d-     "0..1"  Area              : has ->
+User                  o--    "0..*"  Role
+       
+
+
+
+
+@enduml
