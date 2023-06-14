@@ -6,7 +6,7 @@ package Schedule{
   usecase "Create Appointment" as UC1
   usecase "Cancel Appointment" as UC2
   usecase "Confirm Appointment" as UC3
-  usecase "Define Work WeekDays" as UC4
+  usecase "Define Professional Schedule" as UC4
   usecase "Search Professional Availability Days" as UC5
   usecase "Search Professional Availability Times" as UC6
   usecase "Search Client History" as UC7
