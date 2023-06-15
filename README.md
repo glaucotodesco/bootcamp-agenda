@@ -73,6 +73,5 @@
 ### Comandos:
 Generate Diagrams: java -jar plantuml.jar -o "out" .
 
-### Open Prototype:
 
 
