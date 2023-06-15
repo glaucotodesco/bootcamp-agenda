@@ -1,0 +1,61 @@
+@startuml
+!$request={
+   "date":"2023-06-26",
+   "startTime": "08:30:00",
+   "endTime": "09:00:00",
+   "comments": "no coments",
+   "area": {
+      "id": 2
+   }
+   ,
+   "client": {
+      "id": 2
+   }
+   ,
+   "professional":  {
+      "id": 5
+   }
+   ,
+   "type": {
+      "id": 1
+   }
+}
+
+!$response ={
+   "id": 35,
+   "date": "2023-06-19",
+   "startTime": "08:30:00",
+   "endTime": "09:00:00",
+   "status": "OPEN",
+   "comments": "no coments",
+   "client":{
+      "id": 2
+   }
+   ,
+   "area":{
+      "id": 1
+   }
+   ,
+   "professional":{
+      "id": 5
+   }
+   ,
+   "type":{
+      "id": 1
+   }
+}
+rectangle "POST /api/v1/appointments" {
+
+   rectangle "Response Body"  {
+      rectangle Response as " {{json
+      $response
+      }}"
+   }
+
+   rectangle "Request Body"  {
+      rectangle Request as " {{json
+      $request
+      }}"
+   }
+}
+@enduml
