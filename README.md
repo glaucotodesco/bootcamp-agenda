@@ -57,17 +57,17 @@
 
 ## Diagramas:
 ### Caso de Usos:
-![Caso de Uso](docs\\out\\use-cases.png)
+![Caso de Uso](docs/out/use-cases.png)
 
 
 ### Modelo Conceitual:
-![Caso de Uso](docs\\out\\model.png)
+![Caso de Uso](docs/out/model.png)
 
 ### End Points:
-![Caso de Uso](docs\\out\\end-points.png)
+![Caso de Uso](docs/out/end-points.png)
 
 ### End Point: POST \api\v1\appointments:
-![Caso de Uso](docs\\out\\end-point-post-appointments.png)
+![Caso de Uso](docs/out/end-point-post-appointments.png)
 
 
 ### Comandos:
