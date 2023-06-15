@@ -66,7 +66,7 @@
 ### End Points:
 ![Caso de Uso](docs/out/end-points.png)
 
-### End Point: POST \api\v1\appointments:
+### End Point: POST /api/v1/appointments:
 ![Caso de Uso](docs/out/end-point-post-appointments.png)
 
 
