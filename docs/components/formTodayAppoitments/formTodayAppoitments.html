@@ -1,0 +1,90 @@
+<form>
+    
+    <div class="mb-3">
+        Escolha uma área:
+        <select class="form-select" aria-label="Selecione uma área">
+            <option selected>Selecione uma área</option>
+            <option value="1">Clinico Geral</option>
+            <option value="2">Fisoterapeuta</option>
+            <option value="3">Cardiologista</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        Escolha um profissinal:
+        <select class="form-select" aria-label="Selecione um Profissional">
+            <option selected>Selecione um profissional</option>
+            <option value="1">Dr. Fernando Souza</option>
+            <option value="2">Dra. Maria Lucia</option>
+            <option value="3">Dr. Marco Pereira</option>
+        </select>
+    </div>
+
+</form>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-lg text-start">
+        <div class="modal-content">
+            <div class="modal-header bg-light">
+                <h1 class="modal-title fs-5 " id="exampleModalLabel">Cadastro de Cliente</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div id="form-client"></div>
+                <div class="mb-3 row">
+                    <label for="inputName" class="col-sm-3 col-form-label">Nome:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputEmail" class="col-sm-3 col-form-label">Email:</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPhone" class="col-sm-3 col-form-label">Telefone:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputPhone">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputBrithDay" class="col-sm-3 col-form-label">Data de Nascimento:</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="inputBrithDay">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputGenre" class="col-sm-3 col-form-label">Gênero:</label>
+                    <div class="col-sm-9">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Masculino
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Feminino
+                            </label>
+                          </div>
+                    </div>
+                    <div class="mb-3 row mt-1">
+                        <label for="inputBrithDay" class="col-sm-3 col-form-label">Comentários:</label>
+                        <div class="col-sm-9">
+                            <textarea class="form-control"  id="floatingTextarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>

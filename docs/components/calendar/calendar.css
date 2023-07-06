@@ -1,0 +1,51 @@
+
+.calendar {
+    margin: auto;
+}
+
+.month-year {
+    font-weight: 500;
+}
+
+.week-day {
+    padding: 6px;
+    margin: 1px;
+    font-weight: 500;
+}
+
+.day {
+    padding: 6px;
+    margin: 1px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.day-off {
+    background-color:whitesmoke;
+    color: gray;
+}   
+
+.day-selected {
+    background-color: #198754
+}
+.day-available {
+    background-color: #6C757D
+}
+
+.day-available:hover {
+    background-color:  #198754
+}
+
+.previous-month:hover {
+    cursor: pointer;
+}
+
+.next-month:hover {
+    cursor: pointer;
+}
+
+
+
