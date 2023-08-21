@@ -1,7 +1,7 @@
 # Briefing Sistema de Agendamento: 
 
-## Sistema de Agendamento de Consultas.
-  - Uma clínica necessita controlar a agenda dos seus profissionais.
+## Resumo: Sistema de Agendamento de Consultas.
+  - Uma clínica necessita controlar a agenda dos seus profissionais, fazendo o controle da agenda para permitir: marcar um horário de um profissional, confirmar a presença ou ausência de um cliente no dia do agendamento, controlar o horário de trabalho de um profissional, cancelar um agendamento, controlar o histórico de consultas de um cliente, etc.
   - Todo o sistema de agendamento é feito por telefone somente pelos atendentes da clínica.
   - Nessa primeira versão será implementado um MVP (Produto Mínimo Viável), dessa forma, atender somente às necessidades do MVP.
   - Existem diversas outras funcionalidades que serão implementadas nas versões futuras, assim que o MVP for validado pelo cliente.
