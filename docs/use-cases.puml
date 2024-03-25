@@ -19,5 +19,5 @@ o --> UC7
 o --> UC5
 o --> UC6
 a --> UC4
-(UC6) .up.> (UC1) : <<includes>>
+(UC1) .up.> (UC6) : <<includes>>
 @enduml
